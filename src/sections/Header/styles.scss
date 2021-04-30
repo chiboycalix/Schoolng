@@ -1,0 +1,987 @@
+.headerWrapper{
+  background: url('../../assets/img/headerdarkbg.png');
+  background-size: 30%;
+  background-position: 100%;
+  object-fit: contain;
+  width: 100%;
+  background-color: #031A2F;
+  color: #ffffff;
+  padding: 0rem 0rem 5rem 0;
+
+
+  .headerContentWrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    .headerContentWrapperLeft{
+      flex-basis: 50%;
+      .headerContent{
+        padding: 0 5rem;
+        p.schooolnText{
+          font-size: 1.5rem;
+          color: #EB5933;
+        }
+        h1.schoolnHeaderText{
+          font-size: 4rem;
+        }
+        p.schooolnParagraph{
+          font-size: 1.5rem;
+          line-height: 40px;
+          font-weight: 200;
+          margin: 2rem 0;
+          
+        }
+        .btwWrapper{
+          display: flex;
+          justify-content:flex-start;
+          align-items:center;
+    
+          a.btnGooglePlay{
+            text-decoration: none;
+            border: 2px solid #FFF;
+            padding: .5rem 2rem;
+            border-radius: 5px;
+            color: #FFF;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+      
+            &:hover{
+              color: #000;
+              background-color: #FFF;
+            }
+      
+            img{
+              margin-right: 1rem;
+              transition:all .1s linear;
+            }
+            .textWrapper{
+              p{
+                font-size: .7rem;
+                text-align: left;
+              }
+            }
+      
+            &:hover img{
+              margin-right: 1.5rem;
+            }
+          }
+      
+          a.btnAppleStore{
+            text-decoration: none;
+            border: 2px solid #FFF;
+            padding: .8rem 2rem;
+            border-radius: 5px;
+            color: #FFF;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+      
+            .textWrapper{
+              p{
+                font-size: .7rem;
+                text-align: left;
+              }
+            }
+            svg{
+              width: 30px;
+              height: 30px;
+              margin-right: .5rem;
+              transition:all .1s linear;
+            }
+      
+            &:hover{
+              color: #000;
+              background-color: #FFF;
+            }
+      
+            &:hover svg{
+              margin-right: 1.2rem;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+
+    .headerContentWrapperRight{
+      flex: 1;
+      position: relative;
+      img{
+        position: absolute;
+        top: 0px;
+        left: 70px;
+        height:550px;
+      }
+
+      .gistWrapper{
+        position: absolute;
+        color: #031A2F;
+        background-color: #ffffff;
+        padding: .1rem .5rem;
+        width: 20%;
+        border: 1px solid #EB5933;
+        border-radius: 5px;
+        line-height: 20px;
+        top: 0px;
+        left:340px;
+      }
+      div.whiteCircle{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #ffffff;
+        border-radius: 50%;
+        top: 80px;
+        left: 350px;
+      }
+      div.orangeCircle{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #EB5933;
+        border-radius: 50%;
+        top: 100px;
+        left: 330px;
+      }
+    }
+  }
+
+  
+  .scrollbuttonWrapper{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    animation: moveUpandDown 2s infinite ease-in;
+    p{
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+    span{
+      display: inline-block;
+      cursor: pointer;
+      margin-top: .5rem;
+    }
+  }
+}
+
+
+@keyframes moveUpandDown {
+  0% {top: 0px;}
+  50% {top: 10px;}
+  100%{top:0;}
+}
+
+// max-width: 1440px
+@media (max-width: 1440px){
+  .headerWrapper{
+    background: url('../../assets/img/headerdarkbg.png');
+    background-size: 30%;
+    background-position: 100%;
+    object-fit: contain;
+    width: 100%;
+    background-color: #031A2F;
+    color: #ffffff;
+    padding: 0rem 0rem 5rem 0;
+  
+  
+    .headerContentWrapper{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+  
+      .headerContentWrapperLeft{
+        flex-basis: 50%;
+        .headerContent{
+          padding: 0 5rem;
+          p.schooolnText{
+            font-size: 1.5rem;
+            color: #EB5933;
+          }
+          h1.schoolnHeaderText{
+            font-size: 4rem;
+          }
+          p.schooolnParagraph{
+            font-size: 1.5rem;
+            line-height: 40px;
+            font-weight: 200;
+            margin: 2rem 0;
+            
+          }
+          .btwWrapper{
+            display: flex;
+            justify-content:flex-start;
+            align-items:center;
+      
+            a.btnGooglePlay{
+              text-decoration: none;
+              border: 2px solid #FFF;
+              padding: .5rem 2rem;
+              border-radius: 5px;
+              color: #FFF;
+              font-size: 1rem;
+              display: flex;
+              align-items: center;
+              margin-right: 1rem;
+        
+              &:hover{
+                color: #000;
+                background-color: #FFF;
+              }
+        
+              img{
+                margin-right: 1rem;
+                transition:all .1s linear;
+              }
+              .textWrapper{
+                p{
+                  font-size: .7rem;
+                  text-align: left;
+                }
+              }
+        
+              &:hover img{
+                margin-right: 1.5rem;
+              }
+            }
+        
+            a.btnAppleStore{
+              text-decoration: none;
+              border: 2px solid #FFF;
+              padding: .8rem 2rem;
+              border-radius: 5px;
+              color: #FFF;
+              font-size: 1rem;
+              display: flex;
+              align-items: center;
+        
+              .textWrapper{
+                p{
+                  font-size: .7rem;
+                  text-align: left;
+                }
+              }
+              svg{
+                width: 30px;
+                height: 30px;
+                margin-right: .5rem;
+                transition:all .1s linear;
+              }
+        
+              &:hover{
+                color: #000;
+                background-color: #FFF;
+              }
+        
+              &:hover svg{
+                margin-right: 1.2rem;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+  
+      .headerContentWrapperRight{
+        flex: 1;
+        position: relative;
+        img{
+          position: absolute;
+          top: 95px;
+          left: 70px;
+          height:550px;
+        }
+  
+        .gistWrapper{
+          position: absolute;
+          color: #031A2F;
+          background-color: #ffffff;
+          padding: .1rem .5rem;
+          width: 20%;
+          border: 1px solid #EB5933;
+          border-radius: 5px;
+          line-height: 20px;
+          top: 70px;
+          left:340px;
+        }
+        div.whiteCircle{
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background: #ffffff;
+          border-radius: 50%;
+          top: 160px;
+          left: 340px;
+        }
+        div.orangeCircle{
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: #EB5933;
+          border-radius: 50%;
+          top: 190px;
+          left: 330px;
+        }
+      }
+    }
+  
+    
+    .scrollbuttonWrapper{
+      width: 100%;
+      text-align: center;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      position: relative;
+      animation: moveUpandDown 2s infinite ease-in;
+      p{
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+      span{
+        display: inline-block;
+        cursor: pointer;
+        margin-top: .5rem;
+      }
+    }
+  }
+  
+}
+
+// max-width: 1024px
+@media (max-width: 1024px){
+  .headerWrapper{
+    height: 83.5vh;
+  
+  
+    .headerContentWrapper{
+      align-items:center;
+      flex-direction: column;
+  
+      .headerContentWrapperLeft{
+        flex-basis: 100%;
+      }
+  
+      .headerContentWrapperRight{
+        width:100%;
+        position: relative;
+        width: 100%;
+        img{
+          position: absolute;
+          top: 55px;
+          left: 300px;
+          height:550px;
+        }
+  
+        .gistWrapper{
+          position: absolute;
+          color: #031A2F;
+          background-color: #ffffff;
+          padding: .1rem .5rem;
+          width: 15%;
+          border: 1px solid #EB5933;
+          border-radius: 5px;
+          line-height: 20px;
+          top: 60px;
+          left:570px;
+        }
+        div.whiteCircle{
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background: #ffffff;
+          border-radius: 50%;
+          top: 130px;
+          left: 580px;
+        }
+        div.orangeCircle{
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: #EB5933;
+          border-radius: 50%;
+          top: 150px;
+          left: 560px;
+        }
+      }
+    }
+  
+    
+    .scrollbuttonWrapper{
+      width: 100%;
+      text-align: center;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      position: relative;
+      animation: moveUpandDown 2s infinite ease-in;
+      display: none;
+      p{
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+      span{
+        display: inline-block;
+        cursor: pointer;
+        margin-top: .5rem;
+      }
+    }
+  }
+  
+}
+
+// max-width: 768px
+@media (max-width: 768px){
+  .headerWrapper{
+    background: url('../../assets/img/headerdarkbg.png');
+    background-size: 60%;
+    background-position: 100%;
+    object-fit: contain;
+    width: 100%;
+    background-color: #031A2F;
+    color: #ffffff;
+    padding: 0rem 0rem 5rem 0;
+    height: calc(100vh + 19vh);
+  
+  
+    .headerContentWrapper{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      flex-direction: column;
+  
+      .headerContentWrapperLeft{
+        flex-basis: 50%;
+        .headerContent{
+          padding: 0 5rem;
+          p.schooolnText{
+            font-size: 1.5rem;
+            color: #EB5933;
+          }
+          h1.schoolnHeaderText{
+            font-size: 4rem;
+          }
+          p.schooolnParagraph{
+            font-size: 1.5rem;
+            line-height: 40px;
+            font-weight: 200;
+            margin: 2rem 0;
+            
+          }
+          .btwWrapper{
+            display: flex;
+            justify-content:flex-start;
+            align-items:center;
+      
+            a.btnGooglePlay{
+              text-decoration: none;
+              border: 2px solid #FFF;
+              padding: .5rem 2rem;
+              border-radius: 5px;
+              color: #FFF;
+              font-size: 1rem;
+              display: flex;
+              align-items: center;
+              margin-right: 1rem;
+        
+              &:hover{
+                color: #000;
+                background-color: #FFF;
+              }
+        
+              img{
+                margin-right: 1rem;
+                transition:all .1s linear;
+              }
+              .textWrapper{
+                p{
+                  font-size: .7rem;
+                  text-align: left;
+                }
+              }
+        
+              &:hover img{
+                margin-right: 1.5rem;
+              }
+            }
+        
+            a.btnAppleStore{
+              text-decoration: none;
+              border: 2px solid #FFF;
+              padding: .8rem 2rem;
+              border-radius: 5px;
+              color: #FFF;
+              font-size: 1rem;
+              display: flex;
+              align-items: center;
+        
+              .textWrapper{
+                p{
+                  font-size: .7rem;
+                  text-align: left;
+                }
+              }
+              svg{
+                width: 30px;
+                height: 30px;
+                margin-right: .5rem;
+                transition:all .1s linear;
+              }
+        
+              &:hover{
+                color: #000;
+                background-color: #FFF;
+              }
+        
+              &:hover svg{
+                margin-right: 1.2rem;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+  
+      .headerContentWrapperRight{
+        flex: 1;
+        position: relative;
+        width: 100%;
+        img{
+          position: absolute;
+          top: 95px;
+          left: 190px;
+          height:550px;
+        }
+  
+        .gistWrapper{
+          position: absolute;
+          color: #031A2F;
+          background-color: #ffffff;
+          padding: .1rem .5rem;
+          width: 15%;
+          border: 1px solid #EB5933;
+          border-radius: 5px;
+          line-height: 20px;
+          top: 80px;
+          left:450px;
+        }
+        div.whiteCircle{
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background: #ffffff;
+          border-radius: 50%;
+          top: 160px;
+          left: 460px;
+        }
+        div.orangeCircle{
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: #EB5933;
+          border-radius: 50%;
+          top: 190px;
+          left: 450px;
+        }
+      }
+    }
+  
+    
+    .scrollbuttonWrapper{
+      width: 100%;
+      text-align: center;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      position: relative;
+      animation: moveUpandDown 2s infinite ease-in;
+      display: none;
+      p{
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+      span{
+        display: inline-block;
+        cursor: pointer;
+        margin-top: .5rem;
+      }
+    }
+  }
+  
+}
+
+// max-width: 414px
+@media (max-width: 414px){
+  .headerWrapper{
+    background: url('../../assets/img/headerdarkbg.png');
+    background-size: 60%;
+    background-position: 100%;
+    object-fit: contain;
+    width: 100%;
+    background-color: #031A2F;
+    color: #ffffff;
+    padding: 0rem 0rem 5rem 0;
+    height: calc(100vh + 78.5vh);
+  
+  
+    .headerContentWrapper{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      flex-direction: column;
+  
+      .headerContentWrapperLeft{
+        flex-basis: 50%;
+        .headerContent{
+          padding: 0 5rem;
+          p.schooolnText{
+            font-size: 1.5rem;
+            color: #EB5933;
+          }
+          h1.schoolnHeaderText{
+            font-size: 4rem;
+          }
+          p.schooolnParagraph{
+            font-size: 1.5rem;
+            line-height: 40px;
+            font-weight: 200;
+            margin: 2rem 0;
+            
+          }
+          .btwWrapper{
+            display: flex;
+            justify-content:flex-start;
+            align-items:center;
+      
+            a.btnGooglePlay{
+              text-decoration: none;
+              border: 2px solid #FFF;
+              padding: .5rem 2rem;
+              border-radius: 5px;
+              color: #FFF;
+              font-size: 1rem;
+              display: flex;
+              align-items: center;
+              margin-right: 1rem;
+        
+              &:hover{
+                color: #000;
+                background-color: #FFF;
+              }
+        
+              img{
+                margin-right: 1rem;
+                transition:all .1s linear;
+              }
+              .textWrapper{
+                p{
+                  font-size: .7rem;
+                  text-align: left;
+                }
+              }
+        
+              &:hover img{
+                margin-right: 1.5rem;
+              }
+            }
+        
+            a.btnAppleStore{
+              text-decoration: none;
+              border: 2px solid #FFF;
+              padding: .8rem 2rem;
+              border-radius: 5px;
+              color: #FFF;
+              font-size: 1rem;
+              display: flex;
+              align-items: center;
+        
+              .textWrapper{
+                p{
+                  font-size: .7rem;
+                  text-align: left;
+                }
+              }
+              svg{
+                width: 30px;
+                height: 30px;
+                margin-right: .5rem;
+                transition:all .1s linear;
+              }
+        
+              &:hover{
+                color: #000;
+                background-color: #FFF;
+              }
+        
+              &:hover svg{
+                margin-right: 1.2rem;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+  
+      .headerContentWrapperRight{
+        flex: 1;
+        position: relative;
+        width: 100%;
+        img{
+          position: absolute;
+          top: 95px;
+          left: 100px;
+          height:550px;
+        }
+  
+        .gistWrapper{
+          position: absolute;
+          color: #031A2F;
+          background-color: #ffffff;
+          padding: .1rem .5rem;
+          width: 20%;
+          border: 1px solid #EB5933;
+          border-radius: 5px;
+          line-height: 20px;
+          top: 80px;
+          left:370px;
+        }
+        div.whiteCircle{
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background: #ffffff;
+          border-radius: 50%;
+          top: 160px;
+          left: 380px;
+        }
+        div.orangeCircle{
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: #EB5933;
+          border-radius: 50%;
+          top: 190px;
+          left: 370px;
+        }
+      }
+    }
+  
+    
+    .scrollbuttonWrapper{
+      width: 100%;
+      text-align: center;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      position: relative;
+      animation: moveUpandDown 2s infinite ease-in;
+      display: none;
+      p{
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+      span{
+        display: inline-block;
+        cursor: pointer;
+        margin-top: .5rem;
+      }
+    }
+  }
+  
+}
+
+// max-width: 375px
+@media (max-width: 375px){
+  .headerWrapper{
+    background: url('../../assets/img/headerdarkbg.png');
+    background-size: 60%;
+    background-position: 100%;
+    object-fit: contain;
+    width: 100%;
+    background-color: #031A2F;
+    color: #ffffff;
+    padding: 0rem 0rem 5rem 0;
+    height: calc(100vh + 83vh);
+  
+  
+    .headerContentWrapper{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      flex-direction: column;
+  
+      .headerContentWrapperLeft{
+        flex-basis: 50%;
+        .headerContent{
+          padding: 0 2rem;
+          p.schooolnText{
+            font-size: 3rem;
+            color: #EB5933;
+          }
+          h1.schoolnHeaderText{
+            font-size: 4rem;
+            width: 100%;
+          }
+          p.schooolnParagraph{
+            font-size: 2.5rem;
+            line-height: 70px;
+            font-weight: 200;
+            margin: 2rem 0;
+            width: 100%;
+            
+          }
+          .btwWrapper{
+            display: flex;
+            justify-content:flex-start;
+            align-items:center;
+      
+            a.btnGooglePlay{
+              text-decoration: none;
+              border: 2px solid #FFF;
+              padding: 1.2rem 3rem;
+              border-radius: 5px;
+              color: #FFF;
+              font-size: 2rem;
+              display: flex;
+              align-items: center;
+              margin-right: 1rem;
+        
+              &:hover{
+                color: #000;
+                background-color: #FFF;
+              }
+        
+              img{
+                margin-right: 1rem;
+                transition:all .1s linear;
+                height: 50px;
+              }
+              .textWrapper{
+                p{
+                  font-size: 1.5rem;
+                  text-align: left;
+                }
+              }
+        
+              &:hover img{
+                margin-right: 1.5rem;
+              }
+            }
+        
+            a.btnAppleStore{
+              text-decoration: none;
+              border: 2px solid #FFF;
+              padding: 1.9rem 3rem;
+              border-radius: 5px;
+              color: #FFF;
+              font-size: 2rem;
+              display: flex;
+              align-items: center;
+        
+              .textWrapper{
+                p{
+                  font-size: 1rem;
+                  text-align: left;
+                }
+              }
+              svg{
+                width: 60px;
+                height: 60px;
+                margin-right: .5rem;
+                transition:all .1s linear;
+              }
+        
+              &:hover{
+                color: #000;
+                background-color: #FFF;
+              }
+        
+              &:hover svg{
+                margin-right: 1.2rem;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+  
+      .headerContentWrapperRight{
+        flex: 1;
+        position: relative;
+        width: 100%;
+        img{
+          position: absolute;
+          top: 150px;
+          left: 170px;
+          height:600px;
+          width: 700px;
+        }
+  
+        .gistWrapper{
+          position: absolute;
+          color: #031A2F;
+          background-color: #ffffff;
+          padding: .1rem .5rem;
+          width: 40%;
+          border: 1px solid #EB5933;
+          border-radius: 5px;
+          line-height: 50px;
+          top: 50px;
+          left:550px;
+          font-size: 2rem;
+        }
+        div.whiteCircle{
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          background: #ffffff;
+          border-radius: 50%;
+          top: 230px;
+          left: 550px;
+        }
+        div.orangeCircle{
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background: #EB5933;
+          border-radius: 50%;
+          top: 260px;
+          left: 510px;
+        }
+      }
+    }
+  
+    
+    .scrollbuttonWrapper{
+      width: 100%;
+      text-align: center;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      position: relative;
+      animation: moveUpandDown 2s infinite ease-in;
+      display: none;
+      p{
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+      span{
+        display: inline-block;
+        cursor: pointer;
+        margin-top: .5rem;
+      }
+    }
+  }
+  
+}
