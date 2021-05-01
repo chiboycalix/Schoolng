@@ -158,8 +158,8 @@
   }
 }
 
-// max-width: 414px
-@media (max-width: 414px){
+// max-width: 600px
+@media (max-width: 600px){
   .howItWorksWrapper{
     color: #031A2F;
     text-align: center;
@@ -169,7 +169,95 @@
     .howItWorksHeader{
      width: 100%;
      margin-bottom: 5rem;
-     margin-left: 40%;
+     margin-left: 30%;
+  
+     h1{
+       font-size: 3rem;
+       font-weight: 400;
+       margin-bottom: .5rem;
+     }
+     p{
+      font-size: 1.5rem;
+      line-height: 40px;
+      font-weight: 400;
+     }
+    }
+  
+    .howItWorksContent{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: 0 2rem;
+  
+      .howItWorksContentLeft{
+        flex-basis: 100%;
+        margin-left: 15rem;
+  
+        img{
+          width: 550px;
+        }
+      }
+  
+      .howItWorksContentRight{
+        width: 100%;
+        text-align: left;
+        margin-top: 2rem;
+        margin-left: 40%;
+  
+        .howItWorksContentRow{
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          text-align: center;
+  
+          .howItWorksContentColumn{
+            width: 100%;
+            margin-bottom: 5rem;
+            &:not(:last-child){
+              margin-right: 5rem;
+              margin-bottom: 5rem;
+            }
+            span{
+              padding: 1rem 1.5rem;
+              color: #ffffff;
+              background-color: #EB5933;
+              border-radius: 5px;
+              margin-bottom: 1rem;
+              display: inline-block;
+              font-weight: bold;
+              font-size: 1rem;
+            }
+            h3{
+              font-size: 1.7rem;
+              margin-bottom: .5rem;
+              font-weight: 600;
+            }
+            p{
+              line-height: 24px;
+              font-size: 1.5rem;
+              line-height:35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// max-width: 414px
+@media (max-width: 414px){
+  .howItWorksWrapper{
+    color: #031A2F;
+    text-align: center;
+    padding: 5rem 0;
+    width: 100vw;
+  
+    .howItWorksHeader{
+     width: 150%;
+     margin-bottom: 5rem;
+     margin-left: 10%;
   
      h1{
        font-size: 3rem;
@@ -201,10 +289,10 @@
       }
   
       .howItWorksContentRight{
-        width: 100%;
+        width: 150%;
         text-align: left;
         margin-top: 2rem;
-        margin-left: 40%;
+        margin-left: 30%;
   
         .howItWorksContentRow{
           display: flex;

@@ -4,7 +4,7 @@ import PhonesImg from '../../assets/img/howitworks.png'
 
 const HowItWorks = () => {
   return (
-    <div className="howItWorksWrapper">
+    <div className="howItWorksWrapper" id="howitworks">
       <div className="howItWorksHeader">
         <h1>How it Works</h1>
         <p>Schooln.ng is on a mission to empower students to explore the beauty of schooling while connecting and growing together</p>
