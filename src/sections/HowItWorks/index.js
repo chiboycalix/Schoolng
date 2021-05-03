@@ -1,8 +1,13 @@
+import React from 'react';
 import './styles.scss';
 import PhonesImg from '../../assets/img/howitworks.png'
-
+import { useIsVisible } from "react-is-visible";
 
 const HowItWorks = () => {
+  const leftContentRef = React.useRef();
+  const rightContentRef = React.useRef();
+  const leftContentVisible = useIsVisible(leftContentRef);
+  const rightContentVisible = useIsVisible(rightContentRef);
   return (
     <div className="howItWorksWrapper" id="howitworks">
       <div className="howItWorksHeader">
@@ -10,10 +15,10 @@ const HowItWorks = () => {
         <p>Schooln.ng is on a mission to empower students to explore the beauty of schooling while connecting and growing together</p>
       </div>
       <div className="howItWorksContent">
-        <div className="howItWorksContentLeft">
+        <div ref={leftContentRef} className={`howItWorksContentLeft ${leftContentVisible ? 'scrollInLeft' : ''}`}>
           <img src={PhonesImg} alt="PhonesImg" />
         </div>
-        <div className="howItWorksContentRight">
+        <div ref={rightContentRef} className={`howItWorksContentRight ${rightContentVisible ? 'scrollInRight' : ''}`}>
           <div className="howItWorksContentRow">
             <div className="howItWorksContentColumn">
               <span>1</span>
