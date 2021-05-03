@@ -28,6 +28,7 @@
 
     .featuresContentLeft{
       flex-basis: 30%;
+
       .featuresCard{
         display: flex;
         flex-direction: column;
@@ -55,6 +56,14 @@
       }
     }
 
+    .scrollInLeft{
+      position: relative;
+      animation-name: slideInLeft;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
     .featuresContentCenter{
       flex-basis:40%;
       display: flex;
@@ -66,6 +75,7 @@
 
     .featuresContentRight{
       flex-basis: 30%;
+      
 
       .featuresCard{
         display: flex;
@@ -92,6 +102,13 @@
           font-weight: 400;
         }
       }
+    }
+    .scrollInRight{
+      position: relative;
+      animation-name: slideInRight;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
     }
   }
 
@@ -170,6 +187,37 @@
   }
 }
 
+@keyframes slideInLeft {
+    0% {
+      left: -10rem;
+      opacity: 0;
+    }
+    50% {
+      left: 2rem;
+      opacity: 1;
+    }
+    100% {
+      left: 0rem;
+      opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+  0% {
+    right: -10rem;
+    opacity: 0;
+  }
+  50% {
+    right: 2rem;
+    opacity: 1;
+  }
+  100% {
+    right: 0rem;
+    opacity: 1;
+  }
+}
+
+// max-width: 1024px
 @media (max-width:1024px){
   .featuresWrapper{
     width:100%;
@@ -344,7 +392,7 @@
     }
   }
 }
-
+// max-width: 600px
 @media (max-width:600px){
   .featuresWrapper{
     width:100%;
@@ -524,6 +572,7 @@
     }
   }
 }
+// max-width: 414px
 @media (max-width:414px){
   .featuresWrapper{
     width:100%;
@@ -703,7 +752,6 @@
     }
   }
 }
-
 // max-width: 375px
 @media (max-width: 375px){
   .featuresWrapper{
